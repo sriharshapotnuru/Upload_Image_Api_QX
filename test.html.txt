@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Dense Server</title>
+        <style>
+* {
+  box-sizing: border-box;
+}
+input[type=file] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=submit]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=file] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+        </style>
+    </head>
+    <body>
+        <form method="POST" action="http://localhost:5000/" enctype=multipart/form-data>
+            <label>File:-</label>
+            <input type="file" name="image"><br />
+            <input type="submit" value="submit"><br />
+        </form>
+
+
+    </body>
+</html>
